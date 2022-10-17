@@ -13,5 +13,10 @@ echo \
   $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 sudo apt-get update -y
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin -y
+sudo chmod 666 /var/run/docker.sock
+sudo newgroup docker
+sudo chmod 666 /var/run/docker.sock
+sudo usermod -aG docker ${USER}
+sudo usermod -aG docker ${ubuntu}
 sudo docker run hello-world
 docker images
