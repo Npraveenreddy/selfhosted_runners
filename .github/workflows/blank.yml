@@ -10,6 +10,7 @@ jobs:
   build:
     runs-on: self-hosted
     steps:
+      - uses: actions/checkout@v3
       - name: runners testing
       - run: ls -lrt
       - run: mkdir praveen
