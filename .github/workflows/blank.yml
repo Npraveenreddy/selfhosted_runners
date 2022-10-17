@@ -15,7 +15,7 @@ jobs:
         run: |
           ls -lrt
           mkdir praveen
-          ls -lrt
           cd praveen
           ls -lrt
           touch abc
+          pwd
