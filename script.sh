@@ -1,3 +1,3 @@
 #! /bin/sh
 
-docker images
+sudo docker images
