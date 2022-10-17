@@ -17,3 +17,5 @@ jobs:
           mkdir praveen
           ls -lrt
           cd praveen
+          ls -lrt
+          touch abc
